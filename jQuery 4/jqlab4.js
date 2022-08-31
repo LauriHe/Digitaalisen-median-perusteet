@@ -9,23 +9,13 @@ const list = $('ul');
 button.click(function () {
   $('#advice').text('Select your favourite colour among the colours');
   $('#sel').text('Your favourite colours in order');
-  img1.attr('src', 'red.jpg');
-  img2.attr('src', 'blue.jpg');
-  img3.attr('src', 'yellow.jpg');
+  img1.attr('src', 'red.jpg').attr('alt', 'red');
+  img2.attr('src', 'blue.jpg').attr('alt', 'blue');
+  img3.attr('src', 'yellow.jpg').attr('alt', 'yellow');
 });
 
 // Hide images and append colors to list once clicked
-img1.click(function () {
+$('img').click(function () {
   $(this).hide();
-  list.append('<li>red</li>');
-});
-
-img2.click(function () {
-  $(this).hide();
-  list.append('<li>blue</li>');
-});
-
-img3.click(function () {
-  $(this).hide();
-  list.append('<li>yellow</li>');
+  list.append('<li>' + $(this).attr('alt') + '</li>');
 });
