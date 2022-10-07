@@ -45,143 +45,84 @@
     </nav>
 
     <div class="container px-0" id="web">
-      <div class="container my-5">
-
-        <div class="row">
-
-          <div class="col-4">
-            <h1 class="text-light">Web tehtävät</h1>
-          </div>
-
-          <div class="col-4">
-            <img class="img-fluid" src="images/jQuery.svg" alt="jQuery logo" width="80%">
-          </div>
-
-          <div class="col-4">
-            <div class="row">
-              <h3 class="text-light">jQuery tehtävät</h3>
-            </div>
-            <div class="row mt-2">
-              <ul class="list-group">
-                <a class="list-group-item list-group-item-action list-group-item-light"
-                  href="https://users.metropolia.fi/~lauhei/Digitaalisen-median-perusteet/jQuery%201-3/jqbasiclab1.html"
-                  role="button">Tehtävät 1-3</a>
-                <a class="list-group-item list-group-item-action list-group-item-light"
-                  href="https://users.metropolia.fi/~lauhei/Digitaalisen-median-perusteet/jQuery%204/ex4.html"
-                  role="button">Tehtävä 4</a>
-                <a class="list-group-item list-group-item-action list-group-item-light"
-                  href="https://users.metropolia.fi/~lauhei/Digitaalisen-median-perusteet/jQuery%205/animate.html"
-                  role="button">Tehtävä 5</a>
-                <a class="list-group-item list-group-item-action list-group-item-light"
-                  href="https://users.metropolia.fi/~lauhei/Digitaalisen-median-perusteet/jQuery%20+%20AJAX/Search.html"
-                  role="button">AJAX tehtävä</a>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-
+      <div class="row">
+        <h1 class="text-light text-center">Web tehtävät</h1>
       </div>
-
-      <div class="container my-5">
-
-        <div class="row">
-
-          <div class="col-4"></div>
-
-          <div class="col-4">
-            <img class="img-fluid" src="images/bootstrap-5.svg" alt="Bootstrap logo" width="80%">
-          </div>
-
-          <div class="col-4">
-            <div class="row">
-              <h3 class="text-light">Bootstrap tehtävät</h3>
-            </div>
-            <div class="row mt-2">
-              <ul class="list-group">
-                <a class="list-group-item list-group-item-action list-group-item-light"
-                  href="https://users.metropolia.fi/~lauhei/Digitaalisen-median-perusteet/Bootstrap%201/front.html"
-                  role="button">Tehtävä 1</a>
-                <a class="list-group-item list-group-item-action list-group-item-light"
-                  href="https://users.metropolia.fi/~lauhei/Digitaalisen-median-perusteet/Bootstrap%202/softUiDesignSystemPro.html"
-                  role="button">Tehtävä 2</a>
-              </ul>
-            </div>
-          </div>
-
+      <div class="row mt-5 justify-content-evenly">
+        <div class="col-3 align-self-center text-center">
+          <img class="img-fluid" src="images/jQuery.svg" alt="jQuery logo" width="70%">
         </div>
-
-      </div>
-
-      <div class="container my-5">
-
-        <div class="row">
-
-          <div class="col-4"></div>
-
-          <div class="col-4">
-            <img class="img-fluid" src="images/Wordpress-Logo.png" alt="Bootstrap logo" width="80%">
-          </div>
-
-          <div class="col-4">
-            <div class="row">
-              <h3 class="text-light">Wordpress tehtävä</h3>
-            </div>
-            <div class="row mt-2">
-              <ul class="list-group">
-                <a class="list-group-item list-group-item-action list-group-item-light"
-                  href="https://users.metropolia.fi/~lauhei/wordpress/" role="button">Wordpress tehtävä</a>
-              </ul>
-            </div>
-          </div>
-
+        <div class="col-3 align-self-center text-center">
+          <img class="img-fluid" src="images/bootstrap-5.svg" alt="Bootstrap logo" width="70%">
         </div>
-
+        <div class="col-3 align-self-center text-center">
+          <img class="img-fluid" src="images/Wordpress-Logo.png" alt="Wordpress logo" width="70%">
+        </div>
       </div>
-    </div>
-
-    <div class="container px-0" id="videoAndPicture">
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <h1 class="text-light">Video ja Kuva</h1>
-          </div>
-          <div class="col-4 pt-2">
-            <div class="row pb-5">
-              <h2 class="text-light">Vektori tehtävä</h2>
-            </div>
-            <div class="row">
-              <img type="button" data-bs-toggle="modal" data-bs-target="#Vector-modal" class="img-fluid"
-                src="images/Vektori-tehtävä-1.png" alt="Vektori tehtävä" width="100%">
-
-              <!-- Modal -->
-              <div class="modal fade" id="Vector-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Vektori tehtävä</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <img class="d-block w-100" src="images/Vektori-tehtävä-1.png" alt="Vektori tehtävä">
-                    </div>
-                  </div>
-                </div>
+      <div class="row mt-5 justify-content-evenly">
+        <div class="col-3 align-self-start text-center">
+          <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-jQuery"
+            aria-expanded="false" aria-controls="collapse-jQuery">
+            jQuery
+          </button>
+          <div class="collapse" id="collapse-jQuery">
+            <div class="card card-body p-0">
+              <div class="list-group">
+                <a href="https://users.metropolia.fi/~lauhei/Digitaalisen-median-perusteet/jQuery%201-3/jqbasiclab1.html"
+                  class="list-group-item list-group-item-action">Tehtävät 1-3</a>
+                <a href="https://users.metropolia.fi/~lauhei/Digitaalisen-median-perusteet/jQuery%204/ex4.html"
+                  class="list-group-item list-group-item-action">Tehtävä 4</a>
+                <a href="https://users.metropolia.fi/~lauhei/Digitaalisen-median-perusteet/jQuery%205/animate.html"
+                  class="list-group-item list-group-item-action">Tehtävä 5</a>
+                <a href="https://users.metropolia.fi/~lauhei/Digitaalisen-median-perusteet/jQuery%20+%20AJAX/Search.html"
+                  class="list-group-item list-group-item-action">AJAX tehtävä</a>
               </div>
             </div>
-
+          </div>
+        </div>
+        <div class="col-3 align-self-start text-center">
+          <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bootstrap"
+            aria-expanded="false" aria-controls="collapse-bootstrap">
+            Bootstrap
+          </button>
+          <div class="collapse" id="collapse-bootstrap">
+            <div class="card card-body p-0">
+              <div class="list-group">
+                <a href="https://users.metropolia.fi/~lauhei/Digitaalisen-median-perusteet/Bootstrap%201/front.html"
+                  class="list-group-item list-group-item-action">Tehtävä 1</a>
+                <a href="https://users.metropolia.fi/~lauhei/Digitaalisen-median-perusteet/Bootstrap%202/softUiDesignSystemPro.html"
+                  class="list-group-item list-group-item-action">Tehtävä 2</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 align-self-start text-center">
+          <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-wordpress"
+            aria-expanded="false" aria-controls="collapse-wordpress">
+            Wordpress
+          </button>
+          <div class="collapse" id="collapse-wordpress">
+            <div class="card card-body p-0">
+              <div class="list-group">
+                <a href="https://users.metropolia.fi/~lauhei/wordpress/"
+                  class="list-group-item list-group-item-action">Tehtävät</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-4"></div>
-        <div class="col">
-          <div class="row">
-            <h2 class="text-light">After Effects tehtävä</h2>
+    <div class="container px-0 my-5" id="videoAndPicture">
+
+      <div class="row my-5">
+        <h1 class="text-light text-center">Video ja kuva</h1>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-6">
+          <div class="row text-center">
+            <h2 class="text-light">After Effects</h2>
           </div>
           <div class="row">
             <video width="100%" height="50%" controls>
@@ -190,32 +131,22 @@
             </video>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-4"></div>
-        <div class="col">
-          <div class="row">
-            <h2 class="text-light">Videosprintti 1</h2>
+        <div class="col-6">
+          <div class="row text-center">
+            <h2 class="text-light">Videosprintti I</h2>
           </div>
           <div class="row">
-              <video width="100%" height="50%" controls>
-                <source src="videos/Video-sprintti-1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </div>
+            <video width="100%" height="50%" controls>
+              <source src="videos/Video-sprintti-1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-4"></div>
-        <div class="col">
-          <div class="row">
-            <h2 class="text-light">Videosprintti 2</h2>
+      <div class="row my-5">
+        <div class="col-6">
+          <div class="row text-center">
+            <h2 class="text-light">Videosprintti II</h2>
           </div>
           <div class="row">
             <video width="100%" height="50%" controls>
@@ -224,9 +155,117 @@
             </video>
           </div>
         </div>
+        <div class="col-6">
+          <div class="row">
+            <h2 class="text-light text-center">Vektori I</h2>
+          </div>
+          <div class="row text-center">
+            <div class="col">
+              <img type="button" data-bs-toggle="modal" data-bs-target="#Vector-modal" class="img-fluid"
+                src="images/Vektori-tehtävä-1.png" alt="Vektori tehtävä" width="49%">
+            </div>
+            <div class="modal fade" id="Vector-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Vektori I</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="d-block w-100" src="images/Vektori-tehtävä-1.png" alt="Vektori tehtävä">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
-  </div>
+
+    <div class="container px-0 my-5" id="Audio">
+
+      <div class="row my-5">
+        <h1 class="text-light text-center">Ääni tehtävät</h1>
+      </div>
+
+      <div class="row my-5 justify-content-evenly">
+        <div class="col-6">
+          <div class="row text-center">
+            <h2 class="text-light">Moniraitamiksaus</h2>
+          </div>
+          <div class="row">
+            <video width="100%" height="50%" controls>
+              <source src="videos/Moniraitamiksaus.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row text-center my-5">
+          <h2 class="text-light">Mikrofonitutkielma</h2>
+        </div>
+        <div class="row">
+          <div class="row my-3">
+            <p class="text-light">
+              1. Ehdotettu mikrofoni: Rode NTG-2, Hinta: 229
+            </p>
+            <p class="text-light">
+              Rode NTG-2 on haulikko mallinen kondensaattorimikrofoni superkardioidi suuntakuviolla.
+              Kondensaattorimikrofoni sopii hyvin kyseiseen käyttötilanteeseen, sillä se nauhoittaa hyvin kaukaakin
+              tulevia ääniä. Tämä on tärkeää, jos kohdetta halutaan kuvata kauempaa, ja saada silti käyttökelpoista
+              ääntä.
+              Kondensaattorimikrofonin herkkyys häiriöäänille ei myöskään haittaa tässä tilanteessa, sillä se voidaan
+              kiinnittää kameraan jalustalla, joka suodattaa pois kameran liikuttelusta aiheutuvaa mahdollista
+              tärähtelyä.
+              Haulikkomikrofoni on myös luonnostaan suuntaava, eli se suodattaa pois sivulta tulevia ääniä
+              interferenssiperiaatteen avulla.
+            </p>
+            <div class="col">
+              <img class="img-fluid" src="images/Rode-NTG-2.png" alt="Rode-NTG-2 polar pattern" width="40%">
+            </div>
+          </div>
+          <div class="row my-3">
+            <p class="text-light">
+              2. Ehdotettu mikrofoni + vastaanotin: Rode TX-M2 + Rode RX-DESK , Hinta: 444
+            </p>
+            <p class="text-light">
+              Rode TX-M2 on kapula mallinen kondensaattorimikrofoni superkardioidi suuntakuviolla. Suuntakuvionsa
+              ansiosta
+              mikrofoni nauhoittaa vain suoraan sen edestä tulevia ääniä, jonka ansiosta suun edessä pidettynä kuuluu
+              vain
+              esiintyjän ääni. Kyseinen mikrofoni on suunniteltu varta vasten puhumista ja laulamista varten, joten se
+              sopii hyvin nauhoittamaan kesäjuhlan esityksiä ja kuulutuksia. Mikrofoni lähettää äänen digitaalisella 2,4
+              Ghz:n signaalina vastaanottimelle, josta äänen saa ulos XLR-liitäntää käyttäen. Mikrofoni voidaan viedä
+              enintään sadan metrin päähän lähettimestä, joten vastaanotin voidaan sijoittaa joustavasti myös kauemmas
+              esiintymislavasta.
+            </p>
+            <div class="col">
+              <img src="images/Rode-TX-M2.png" alt="Rode-TX-M2 polar pattern" width="40%">
+            </div>
+          </div>
+          <div class="row my-3">
+            <p class="text-light">
+              3. Ehdotettu mikrofoni: Shure MX 393/O , Hinta: 290
+            </p>
+            <p class="text-light">
+              Shure MX 393/O on pöydälle asetettava kondensaattorimikrofoni suuntaamattomalla kuviolla.
+              kondensaattorimikrofoni nauhoittaa hyvin kauempaakin tulevia ääniä, joten kauempanakin istuvien
+              henkilöiden
+              äänet pitäisi kuulua hyvin. MX 393/O:n suuntakuvio ei ole suunnattu mihinkään tiettyyn suuntaan, vaan se
+              poimii ääntä joka puolelta, joten mikrofoni voidaan asettaa esimerkiksi neuvotteluhuoneen pöydän keskelle.
+            </p>
+            <div class="col">
+              <img src="images/Shure-MX-393.png" alt="Shure-MX-393 polar pattern" width="25%">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
   </div>
 
