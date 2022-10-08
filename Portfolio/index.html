@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="../jquery-3.6.0.min.js" defer></script>
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="main.css" defer>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
@@ -28,23 +30,23 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Kaikki</a>
+              <a id="allLink" class="nav-link active" href="#">Kaikki</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Web</a>
+              <a id="webLink" class="nav-link" href="#">Web</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Video ja kuva</a>
+              <a id="videoLink" class="nav-link" href="#">Video ja kuva</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Ääni</a>
+              <a id="audioLink" class="nav-link" href="#">Ääni</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container px-0" id="web">
+    <div class="container px-0 my-5" id="web">
       <div class="row">
         <h1 class="text-light text-center">Web tehtävät</h1>
       </div>
@@ -90,30 +92,29 @@
               <div class="list-group">
                 <a href="https://users.metropolia.fi/~lauhei/Digitaalisen-median-perusteet/Bootstrap%201/front.html"
                   class="list-group-item list-group-item-action">Tehtävä 1</a>
-                <a href="https://users.metropolia.fi/~lauhei/Digitaalisen-median-perusteet/Bootstrap%202/softUiDesignSystemPro.html"
+                <a href="https://users.metropolia.fi/~lauhei/Digitaalisen-median-perusteet/jQuery%20+%20AJAX/Search.html"
                   class="list-group-item list-group-item-action">Tehtävä 2</a>
+                <a href="https://users.metropolia.fi/~lauhei/Digitaalisen-median-perusteet/Bootstrap%202/softUiDesignSystemPro.html"
+                  class="list-group-item list-group-item-action">Bootstrap kustomointi / SCSS
+                  <a href="https://demos.creative-tim.com/marketplace/soft-ui-design-system-pro/presentation.html"
+                    class="
+                    list-group-item list-group-item-action">Bootstrap kustomointi malli teema</a>
+                </a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-3 align-self-start text-center">
-          <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-wordpress"
-            aria-expanded="false" aria-controls="collapse-wordpress">
+          <a class="btn btn-danger" type="button" href="https://users.metropolia.fi/~lauhei/wordpress/">
             Wordpress
-          </button>
-          <div class="collapse" id="collapse-wordpress">
-            <div class="card card-body p-0">
-              <div class="list-group">
-                <a href="https://users.metropolia.fi/~lauhei/wordpress/"
-                  class="list-group-item list-group-item-action">Tehtävät</a>
-              </div>
-            </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
 
-    <div class="container px-0 my-5" id="videoAndPicture">
+    <div class="divider my-5"></div>
+
+    <div class="container px-0 my-5" id="video">
 
       <div class="row my-5">
         <h1 class="text-light text-center">Video ja kuva</h1>
@@ -162,7 +163,7 @@
           <div class="row text-center">
             <div class="col">
               <img type="button" data-bs-toggle="modal" data-bs-target="#Vector-modal" class="img-fluid"
-                src="images/Vektori-tehtävä-1.png" alt="Vektori tehtävä" width="49%">
+                src="images/Vektori-tehtävä-1-red.png" alt="Vektori tehtävä" width="49%">
             </div>
             <div class="modal fade" id="Vector-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
@@ -173,7 +174,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <img class="d-block w-100" src="images/Vektori-tehtävä-1.png" alt="Vektori tehtävä">
+                    <img class="d-block w-100" src="images/Vektori-tehtävä-1-red.png" alt="Vektori tehtävä">
                   </div>
                 </div>
               </div>
@@ -184,7 +185,9 @@
 
     </div>
 
-    <div class="container px-0 my-5" id="Audio">
+    <div class="divider"></div>
+
+    <div class="container px-0 my-5" id="audio">
 
       <div class="row my-5">
         <h1 class="text-light text-center">Ääni tehtävät</h1>
@@ -224,8 +227,25 @@
               Haulikkomikrofoni on myös luonnostaan suuntaava, eli se suodattaa pois sivulta tulevia ääniä
               interferenssiperiaatteen avulla.
             </p>
-            <div class="col">
-              <img class="img-fluid" src="images/Rode-NTG-2.png" alt="Rode-NTG-2 polar pattern" width="40%">
+            <div class="row">
+              <div class="col">
+                <img type="button" data-bs-toggle="modal" data-bs-target="#Rode-NTG-2-modal" class="img-fluid"
+                  src="images/Rode-NTG-2.png" alt="Rode-NTG suuntakuvio ja taajuusvaste" width="40%">
+              </div>
+              <div class="modal fade" id="Rode-NTG-2-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Rode-NTG suuntakuvio ja taajuusvaste</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="d-block w-100" src="images/Rode-NTG-2.png" alt="Rode-NTG suuntakuvio ja taajuusvaste">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row my-3">
@@ -243,8 +263,26 @@
               enintään sadan metrin päähän lähettimestä, joten vastaanotin voidaan sijoittaa joustavasti myös kauemmas
               esiintymislavasta.
             </p>
-            <div class="col">
-              <img src="images/Rode-TX-M2.png" alt="Rode-TX-M2 polar pattern" width="40%">
+            <div class="row">
+              <div class="col">
+                <img type="button" data-bs-toggle="modal" data-bs-target="#Rode-TX-M2-modal" class="img-fluid"
+                  src="images/Rode-TX-M2.png" alt="Rode-TX-M2 suuntakuvio ja taajuusvaste" width="40%">
+              </div>
+              <div class="modal fade" id="Rode-TX-M2-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Rode-TX-M2 suuntakuvio ja taajuusvaste</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="d-block w-100" src="images/Rode-TX-M2.png"
+                        alt="Rode-TX-M2 suuntakuvio ja taajuusvaste">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row my-3">
@@ -258,8 +296,26 @@
               äänet pitäisi kuulua hyvin. MX 393/O:n suuntakuvio ei ole suunnattu mihinkään tiettyyn suuntaan, vaan se
               poimii ääntä joka puolelta, joten mikrofoni voidaan asettaa esimerkiksi neuvotteluhuoneen pöydän keskelle.
             </p>
-            <div class="col">
-              <img src="images/Shure-MX-393.png" alt="Shure-MX-393 polar pattern" width="25%">
+            <div class="row">
+              <div class="col">
+                <img type="button" data-bs-toggle="modal" data-bs-target="#Shure-MX-393-modal" class="img-fluid"
+                  src="images/Shure-MX-393.png" alt="Shure-MX-393 suuntakuvio ja taajuusvaste" width="20%">
+              </div>
+              <div class="modal fade" id="Shure-MX-393-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Shure-MX-393 suuntakuvio ja taajuusvaste</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="d-block w-50" src="images/Shure-MX-393.png"
+                        alt="Shure-MX-393 suuntakuvio ja taajuusvaste">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
