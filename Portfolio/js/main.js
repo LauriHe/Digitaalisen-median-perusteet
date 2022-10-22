@@ -1,25 +1,31 @@
+// Navbar buttons
 const allLink = $("#allLink");
 const webLink = $("#webLink");
 const videoLink = $("#videoLink");
 const audioLink = $("#audioLink");
 
+// Different pages
 const web = $("#web");
 const video = $("#video");
 const audio = $("#audio");
 const divider = $(".divider");
 
+// Modals for videos
 const afterEffectsModal = $("#afterEffectsModal");
 const videosprintti1Modal = $("#videosprintti1Modal");
 const videosprintti2Modal = $("#videosprintti2Modal");
 const moniraitamiksausModal = $("#moniraitamiksausModal");
 
+// Video elements
 const afterEffectsVideo = $("#afterEffectsVideo");
 const videosprintti1Video = $("#videosprintti1Video");
 const videosprintti2Video = $("#videosprintti2Video");
 const moniraitamiksausVideo = $("#moniraitamiksausVideo");
 
+// Duration of show/hide animations
 const animationTime = 500;
 
+// Function to show all exercises.
 function showAll(animation) {
   if (animation) {
     web.show(animationTime);
@@ -39,6 +45,7 @@ function showAll(animation) {
   sessionStorage.setItem("activePage", "all");
 };
 
+// Function to show web exercises.
 function showWeb(animation) {
   if (animation) {
     web.show(animationTime);
@@ -59,6 +66,7 @@ function showWeb(animation) {
   sessionStorage.setItem("activePage", "web");
 };
 
+// Function to show video and vector exercises.
 function showvideo(animation) {
   if (animation) {
     web.hide(animationTime);
@@ -78,6 +86,7 @@ function showvideo(animation) {
   sessionStorage.setItem("activePage", "video");
 };
 
+// Function to show audio exercises.
 function showAudio(animation) {
   if (animation) {
     web.hide(animationTime);
@@ -97,6 +106,7 @@ function showAudio(animation) {
   sessionStorage.setItem("activePage", "audio");
 };
 
+// Event listeners for navbar buttons
 allLink.click(function () { showAll(true) });
 
 webLink.click(function () { showWeb(true) });
@@ -106,6 +116,7 @@ videoLink.click(function () { showvideo(true) });
 audioLink.click(function () { showAudio(true) });
 
 
+// Event listeners for modals to pause video when modal is closed.
 afterEffectsModal.on('hidden.bs.modal', function (event) {
   afterEffectsVideo[0].pause();
 });
@@ -122,6 +133,8 @@ moniraitamiksausModal.on('hidden.bs.modal', function (event) {
   moniraitamiksausVideo[0].pause();
 });
 
+
+// Checks from session storage which page was last active and calls the appropriate function.
 try {
   let activePage = sessionStorage.getItem("activePage");
   switch (activePage) {

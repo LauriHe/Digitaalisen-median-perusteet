@@ -1,16 +1,17 @@
+/*Import font*/
 @font-face {
   font-family: RobotoMono;
   src: url(../fonts/RobotoMono-Regular.ttf);
 }
 
+/*Apply font*/
 body {
   font-family: RobotoMono!important;
 }
 
+/*Applies correct dimensions for dividers*/
 .divider{
   height: 4px;
   border-radius: 10px;
   width: 100%;
-  margin-top: 7em;
-  margin-bottom: 7em;
 }
